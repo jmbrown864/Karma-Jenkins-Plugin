@@ -1,0 +1,13 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:e="/hudson/plugins/karma/tags">
+ <j:if test="${it.hasChildren()}">
+  <tr>
+    <th>${%name}</th>
+    <j:if test="${it.hasChildrenLineCoverage()}">
+      <th>${%line}</th>
+    </j:if>
+    <th>${%statement}</th>
+    <th>${%function}</th>
+    <th>${%branch}</th>
+  </tr>
+ </j:if>  
+</j:jelly>

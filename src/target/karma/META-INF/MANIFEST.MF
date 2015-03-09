@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Built-By: jbrown
+Created-By: Apache Maven
+Build-Jdk: 1.7.0_40
+Extension-Name: karma
+Implementation-Title: karma
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: karma
+Long-Name: Karma Jenkins plugin
+Url: http://jenkins-ci.org/plugin/karma/
+Plugin-Version: 1.0
+Hudson-Version: 1.599
+Jenkins-Version: 1.599
+Plugin-Dependencies: dashboard-view:2.1;resolution:=optional
+Plugin-Developers: Jasmine Brown:jbrown:jbrown@paperhost.com
+Support-Dynamic-Loading: true
+

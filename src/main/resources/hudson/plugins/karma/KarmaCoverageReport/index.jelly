@@ -1,0 +1,12 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <l:layout xmlns:e="/hudson/plugins/karma/tags" norefresh="true" css="/plugin/karma/css/style.css">
+    <st:include it="${it.build}" page="sidepanel.jelly" />
+    <l:main-panel>
+      <h2>${%Karma Coverage Report}</h2>
+      <e:floatingTrendGraph/>
+
+      <h3>${%Overall Coverage Summary}</h3>
+	  <iframe src="../../ws/coverage/PhantomJS 1.9.8 (Windows 7)/index.html" frameborder="0" width="100%" height="600"></iframe>
+    </l:main-panel>
+  </l:layout>
+</j:jelly>
